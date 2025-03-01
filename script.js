@@ -1,12 +1,13 @@
 function changeSeason() {
     const seasons = [
-        {name: "Spring", color: "#FF9999", desc: "Flowers bloom and love blossoms."},
-        {name: "Summer", color: "#FFD700", desc: "Feel the warmth of the sun and happiness."},
-        {name: "Autumn", color: "#FF8C00", desc: "Golden leaves and cozy moments."},
-        {name: "Winter", color: "#99CCFF", desc: "Snowfall and warmth of togetherness."}
+        {name: "Spring", background: "https://source.unsplash.com/1600x900/?spring,flowers", desc: "Flowers bloom and love is in the air."},
+        {name: "Summer", background: "https://source.unsplash.com/1600x900/?summer,beach", desc: "Warm sunshine and joyful vibes."},
+        {name: "Autumn", background: "https://source.unsplash.com/1600x900/?autumn,leaves", desc: "Golden leaves and cozy moments."},
+        {name: "Winter", background: "https://source.unsplash.com/1600x900/?winter,snow", desc: "Snowflakes and the warmth of togetherness."}
     ];
+    
     let season = seasons[Math.floor(Math.random() * seasons.length)];
-    document.body.style.backgroundColor = season.color;
+    document.querySelector(".overlay").style.backgroundImage = `url(${season.background})`;
     document.getElementById("season-title").innerText = season.name;
     document.getElementById("season-description").innerText = season.desc;
 }
