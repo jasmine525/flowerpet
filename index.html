@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Pet</title>
+    <title>Seasons of Love</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
-    <h1>Welcome to Flower Pet</h1>
-    <p>This is a simple static website hosted on GitHub Pages.</p>
-    <button onclick="changeColor()">Change Background</button>
+<body onload="changeSeason()">
+    <div class="container">
+        <h1 id="season-title">Welcome to Seasons of Love</h1>
+        <p id="season-description">Experience the beauty of seasons with interactive content.</p>
+        <button onclick="changeSeason()">Change Season</button>
+    </div>
     <script src="static/js/script.js"></script>
 </body>
 </html>

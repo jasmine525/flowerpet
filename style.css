@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    transition: background 1s;
+    transition: background 1s, color 1s;
+}
+.container {
+    padding: 50px;
 }
 button {
     padding: 10px 20px;
